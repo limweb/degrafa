@@ -1,5 +1,5 @@
 #summary Learn how to get set up and get started with Degrafa.
-#labels guide,howto
+#labels guide,howto,Featured
 
 = Using Degrafa =
 
