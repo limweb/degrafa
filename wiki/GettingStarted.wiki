@@ -6,7 +6,7 @@
 Degrafa works with Flex2.0.1 and Flex3 (beta). If you don't have either of those, you can [https://www.adobe.com/cfusion/tdrc/index.cfm?product=flex download Flex 2.0.1], or [http://labs.adobe.com/technologies/flex/ download the beta of Flex 3] from Adobe Labs.
 
   # Download the latest version of the degrafa.swc from the Download page.
-  # Create a new Flex project in FlexBuilder.
+  # Create a new Flex project in Flex Builder.
   # In your Flex project, create a lib directory.
   # Extract the degrafa.swc file from the .zip, and place it in the lib directory.
   # Right click on the project name in the project Navigator, and select Properties.
