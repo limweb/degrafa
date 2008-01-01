@@ -1,8 +1,6 @@
 #summary Learn how to get set up and get started with Degrafa.
 #labels guide,howto
 
-== Getting Started ==
-
 This page will cover what you need to do to get Degrafa set up. Just follow the steps.
 
 
