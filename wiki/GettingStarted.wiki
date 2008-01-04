@@ -15,5 +15,5 @@ Degrafa works with Flex2.0.1 and Flex3 (beta). If you don't have either of those
   # Click the “Add SWC Folder“ button.
   # Type in “lib“, press “OK“
   # Press “OK“ to commit your changes.
-  # Degrafa is now available to use in your project. To use Degrafa, you need to use the proper XML Namespace: xmlns:degrafa=“http://www.degrafa.com“
+  # Degrafa is now available to use in your project. To use Degrafa, you need to use the proper XML Namespace: xmlns:degrafa=“http://www.degrafa.com/2007“
   # Once the degrafa name space is added in your MXML file, you can use any of the Degrafa classes: <degrafa:Circle ... /> 
