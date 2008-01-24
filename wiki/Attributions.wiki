@@ -5,13 +5,13 @@ Some of the algorithms and functionality in Degrafa was inspired from various so
 
 The Batik team: http://xmlgraphics.apache.org/batik/
 
-Senocular: http://www.senocular.com/ 
+Senocular: http://www.senocular.com 
 
-The Algorithmist: http://algorithmist.wordpress.com/category/flash/ 
+The Algorithmist: http://algorithmist.wordpress.com
 
-Flash-creations: http://www.flash-creations.com 
+Flash-creations: http://www.flash-creations.com
 
-Inkscape: http://www.inkscape.org/ 
+Inkscape: http://www.inkscape.org
 
 Adobe: http://www.adobe.com
 
