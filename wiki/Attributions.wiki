@@ -1,6 +1,5 @@
-#labels info,attributions
-
 #summary Attributions to other sources
+#labels info,attributions
 
 Some of the algorithms and functionality in Degrafa was inspired from various sources. We wish to thank these knowledgeable folks for their contributions, insight and inspiration to the community from which we all learn so much. Thank you!
 
