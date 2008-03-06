@@ -1,4 +1,6 @@
+#summary Changes between Degrafa Beta 1 - Beta 2.
 #labels changes,beta
+
 =Degrafa Beta 2 Changes=
 
 Here's a general list of some of the changes and additions that were made between Degrafa Beta 1 and Beta 2:
