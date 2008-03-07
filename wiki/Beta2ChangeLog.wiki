@@ -12,7 +12,7 @@ Here's a general list of some of the changes and additions that were made betwee
   # On some geometry objects (path, polygon, and polyline), resetting the data property would not clear the existing items. Setting the data property will now properly clear and re compute the object.
   # The bounds and drawing commands in the Polygon and Polyline geometry objects were not correctly taking into account the x and y properties during computation. This will now work as expected.
 
-==ﾠEnhancements==
+==Enhancements==
   # All Boolean properties accessible from mxml have be updated to show an enumeration of true,false. Makes the mxml experience more enjoyable.
   # We have added icons to all the mxml level objects so that the various objects are more apparent in the mxml outline view.
   # Drawing to arbitrary graphics contexts is now supported via the property graphicsTarget this property accepts an array of display objects and is supported on all subclasses of geometry. As part of this features functionality we also added the property autoClearGraphicsTarget. The default value is true and when true the target graphics contexts will be cleared before rendering.
