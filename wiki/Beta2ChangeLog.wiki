@@ -6,7 +6,7 @@
 Here's a general list of some of the changes and additions that were made between Degrafa Beta 1 and Beta 2:
 
 ==Bugs==
-  # The collection base class has been updated with bug fixes it also now properly add(s)/remove(s) event listeners at the right moments. As this is the base class, these changes propagate up to all of it’s sub classed versions. The result is that adding or removing items to the collection through Action Script will now correctly dispatch the change and/or clean up.
+# The collection base class has been updated with bug fixes it also now properly add(s)/remove(s) event listeners at the right moments. As this is the base class, these changes propagate up to all of it’s sub classed versions. The result is that adding or removing items to the collection through Action Script will now correctly dispatch the change and/or clean up.
   # Fill and stroke properties when directly set with a new fill or stroke will now properly update. This problem seen in Action Script, happens when you want to replace the fill or stroke objects on a geometry item with a different one.
   # On some of the geometry objects computation was being redone when a fill or stroke change occurred causing the object to be drawn twice. This is no longer the case.
   # On some geometry objects (path, polygon, and polyline), resetting the data property would not clear the existing items. Setting the data property will now properly clear and re compute the object.
