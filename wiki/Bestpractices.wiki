@@ -1,8 +1,0 @@
-= Introduction =
-
-A consolidated list of best practices to keep in mind when using Dgerafa.
-
-
-= Details =
-
-Comming soon...
