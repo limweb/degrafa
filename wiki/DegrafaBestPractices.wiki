@@ -4,13 +4,11 @@
 
 Degrafa Best Practices
 
-If you have a Degrafa related tip, snippet or best practice to share here please forward to the team.
+If you have a Degrafa related best practice to share here please forward to the team.
 
 info@degrafa.com
 
 
 = Details =
 
-Best practices, tips and snippets from the Degrafa team. 
-
-http://code.google.com/p/degrafa/wiki/Bestpractices
+Comming soon.
