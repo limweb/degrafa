@@ -7,4 +7,6 @@ Degrafa Best Practices
 
 = Details =
 
-Comming soon.
+Best practices, tips and snippets from the Degrafa team. 
+
+Comming soon...
