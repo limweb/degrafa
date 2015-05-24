@@ -1,0 +1,24 @@
+# Degrafa Beta 2 Changes #
+
+Here's a general list of some of the changes and additions that were made between Degrafa Beta 1 and Beta 2:
+
+## Bugs ##
+  1. The collection base class has been updated with bug fixes it also now properly add(s)/remove(s) event listeners at the right moments. As this is the base class, these changes propagate up to all of it’s sub classed versions. The result is that adding or removing items to the collection through Action Script will now correctly dispatch the change and/or clean up.
+  1. Fill and stroke properties when directly set with a new fill or stroke will now properly update. This problem seen in Action Script, happens when you want to replace the fill or stroke objects on a geometry item with a different one.
+  1. On some of the geometry objects computation was being redone when a fill or stroke change occurred causing the object to be drawn twice. This is no longer the case.
+  1. On some geometry objects (path, polygon, and polyline), resetting the data property would not clear the existing items. Setting the data property will now properly clear and re compute the object.
+  1. The bounds and drawing commands in the Polygon and Polyline geometry objects were not correctly taking into account the x and y properties during computation. This will now work as expected.
+
+## Enhancements ##
+  1. All Boolean properties accessible from mxml have be updated to show an enumeration of true,false. Makes the mxml experience more enjoyable.
+  1. We have added icons to all the mxml level objects so that the various objects are more apparent in the mxml outline view.
+  1. Drawing to arbitrary graphics contexts is now supported via the property graphicsTarget this property accepts an array of display objects and is supported on all subclasses of geometry. As part of this features functionality we also added the property autoClearGraphicsTarget. The default value is true and when true the target graphics contexts will be cleared before rendering.
+  1. The ability to nest geometry for proper composition is now possible. We also added a new geometry object GeometryComposition that makes a good root candidate for composing. This new object in conjunction with the graphicsTarget property allow one to use Degrafa with out having to setup a Surface and a GeometryGroup. However it is not a DisplayObject so with out a graphicsTarget specified no rendering will be performed.
+  1. The various color properties have been merged into one. We feel overall this will provide a much simpler method to specify the color settings as you see fit.
+  1. New state and stateEvent properties have been added to all geometry objects. At this time state is only taken into account when using the Degrafa skins and stateEvent is not yet implemented. The bright side is that we can now have all skin states in one mxml file. Expect more features to be added using these 2 properties in the near future.
+  1. Segments now have constructor arguments as well as a data argument. The data argument has been moved to the end of the argument list so you will have to update code that uses data in the constructor of a segment. The path object specifically takes advantage of this which allowed us to eliminate unnecessary parsing for each segment in the collection providing a performance boost.
+  1. LinearGradientFill and stroke now support a definable bounds via new properties (x, y, width, and height). If all of these or just width and height are specified then it will use the specified rectangle for it’s rendering. If none are specified it will fall back to the geometry object bounds or the rectangle that is passed to the draw method. We added the same support to the RadialGradientFill and stroke except the properties in this case are cx, cy, and radius.
+  1. Create objects reusing or overriding properties derived from other objects using the derive property.
+  1. New library base classes, starting with Polygon, others will soon follow as well as libraries to help get you started.
+  1. Specify ratios for gradients using different units, like inches, px, etc. using the ratioUnit property.
+  1. Some of the geometry drawing code has been updated. Circle, Ellipse, RegularRectangle, RoundedRectangle and RoundedRectangleComplex are no longer using the built in flash drawing commands (drawCircle()) for example. This was an important step for future enhancements. All drawing code now boils down to a command stack of moveTo, lineTo or curveTo. There will be refactoring throughout all geometry that will bring a cleaner code base and remove duplicate code once we have finished defining the architectural rendering pipline required to support where we need to go.
